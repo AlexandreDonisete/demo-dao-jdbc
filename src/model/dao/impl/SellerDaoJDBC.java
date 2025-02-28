@@ -7,7 +7,6 @@ import model.entities.Department;
 import model.entities.Seller;
 
 import java.sql.*;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

@@ -1,5 +1,6 @@
 package application;
 
+import db.DB;
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
 import model.entities.Department;
@@ -51,8 +52,9 @@ public class Program {
         System.out.println("Enter id for delete test: ");
         int id = sc.nextInt();
         sellerDao.deleteById(id);
-        System.out.println("Successfully deleted");
+        System.out.println("Successfully deleted!");
 
         sc.close();
+        DB.closeConnection();
     }
 }
